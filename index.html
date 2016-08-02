@@ -1,10 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!-- mysql root password: %Kj,T#Yq4#ai -->
+<html lang="en">
+
 <head>
-  <META http-equiv="refresh" content="0;URL=http://www.danielkawamoto.com">
+  <meta charset="utf-8">
+
+  <title>GramCracker</title>
+  <meta name="Everything to grams" content="Volume to mass conversion">
+  <meta name="Daniel Kawamoto" content="danielkawamoto.com">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
+
 <body>
-  Hello World
+  <div class="header">
+    <!-- <nav>
+        <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a>
+            </li>
+            <li role="presentation"><a href="#">Sign In</a>
+            </li>
+            <li role="presentation"><a href="showSignUp">Sign Up</a>
+            </li>
+        </ul>
+    </nav> -->
+    <h1 class="page-title">GramCracker</h1>
+  </div>
+  <!-- <h1 id="page-title">GramCracker</h1> -->
+
+  <select value="Ingredient" class="col-md-4" id="ingredient">
+    <option value="Creme Fraiche">Creme Fraiche</option>
+    <option value="Heavy Cream">Heavy Cream</option>
+    <option value="Milk">Milk</option>
+    <option value="Sugar">Sugar</option>
+    <option value="Brown Sugar">Brown Sugar</option>
+    <option value="Powdered Sugar" onselect="ingredient()">Powdered Sugar</option>
+    <option value="Honey">Honey</option>
+    <option value="Molasses">Molasses</option>
+    <option value="Kosher Salt">Kosher Salt</option>
+    <option value="Cocoa Powder">Cocoa Powder</option>
+  </select>
+  <input class="col-md-2" id="quantity">Quantiy</input>
+  <input class="col-md-2" id="unit">Unit</input>
+  <button id="test" onclick="ingredient()">Give me mass!</button>
+
+  <div id="option-button-text">Would you like to have a new ingredient added or suggest a change?</div>
+  <div id="option-button-group">
+    <a href="mailto:djkawamoto@gmail.com?subject=New%20Ingredient%20Submission&body=Ingredient%20Name:%20%0D%0AIngredient%20Mass/gram:%20"><button class="email-button" id="new-ingredient">Submit new ingredient</button></a>
+    <a href="mailto:djkawamoto@gmail.com?subject=Suggest%20a%20Change"><button class="email-button" id="suggest-change">Suggest a change</button></a>
+  </div>
+  <footer class="footer">
+    <h4>Thanks for using GramCracker! To learn more about this and other exciting development projects go to <a href="http://www.danielkawamoto.com">danielkawamoto.com</a></h4>
+    <p>Questions or comments? Send an email to <a href="mailto:djkawamoto@gmail.com?Subject=Hello%20from%20the%20GramCracker%20app%20contact%20form" target="_top">djkawamoto@gmail.com</a>.</p>
+
+  </footer>
 </body>
 
 </html>
