@@ -9,8 +9,8 @@ function calcGrams() {
     "Powdered Sugar": 130,
     "Honey": 300,
     "Molasses": 280,
-    "KosherSalt": 220,
-    "CocoaPowder": 120
+    "Kosher Salt": 220,
+    "Cocoa Powder": 120
   };
   var ingredient = document.getElementById('ingredient').value;
   var quantity = document.getElementById('quantity').value;
