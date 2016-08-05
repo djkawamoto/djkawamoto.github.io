@@ -11,8 +11,9 @@ h1 {
   font-weight: bold;
 }
 #test {
-  margin-left: 30px;
-  padding: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
   clear: both;
 }
 .page-title {
@@ -44,12 +45,13 @@ h1 {
 }
 
 button {
-  border-radius: 5px;
+  border-radius: 15px;
+  padding: 10px;
   background-color: tomato;
   color: white;
 }
 footer {
-  margin: 25% 20px 20px 20px;
+  margin: 40% 20px 20px 20px;
   clear: both;
 }
 a {
