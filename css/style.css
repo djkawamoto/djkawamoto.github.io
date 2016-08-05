@@ -39,6 +39,8 @@ h1 {
 #result {
   padding: 10px;
   font-size: 24px;
+  float: left;
+  clear: both;
 }
 #results label {
   padding-left: 0px;
