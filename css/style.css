@@ -1,3 +1,6 @@
+.header {
+  color: black;
+}
 body {
   background: lightblue;
 }
@@ -9,32 +12,57 @@ h1 {
 }
 #test {
   margin-left: 30px;
+  padding: 10px;
+  clear: both;
 }
 .page-title {
   padding: 20px;
 }
 #ingredient {
-  margin: 20px;
+  margin: 5px 20px 20px 20px;
+  float: left;
+  clear:both;
 }
 #unit {
-  margin: 20px 20px 20px 10px;
+  margin: 5px 20px 20px 20px;
+  clear: both;
 }
 #quantity {
-  margin: 20px 20px 20px 10px;
+  margin: 5px 20px 20px 20px;
+  float: left;
+  clear: both;
 }
+#result-label {
+  text-decoration: underline;
+}
+#result {
+  padding: 10px;
+  font-size: 24px;
+}
+#results label {
+  padding-left: 0px;
+}
+
 button {
   border-radius: 5px;
   background-color: tomato;
   color: white;
 }
 footer {
-  margin: 20px;
+  margin: 25% 20px 20px 20px;
+  clear: both;
 }
 a {
   color: tomato;
 }
-#option-button-text, #option-button-group {
-  margin: 20px;
+#option-button-group {
+  margin-bottom: 20px;
+}
+label {
+  margin: 10px;
+  text-align: left;
+  clear: both;
+  float:left;
 }
 
 /*.email-button {

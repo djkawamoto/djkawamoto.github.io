@@ -13,7 +13,7 @@
   <!-- Latest compiled and minified CSS -->
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
@@ -39,8 +39,9 @@
     <h1 class="page-title">GramCracker</h1>
   </div>
   <!-- <h1 id="page-title">GramCracker</h1> -->
-
-  <select value="Ingredient" class="col-md-4" id="ingredient">
+  <label for="ingredient" class="col-md-4">Ingredient</label>
+  <select value="Ingredient" class="col-md-4" id="ingredient" onchange="selectIngredient()">
+    <option value="(Select Ingredient)" selected="selected" disabled="disabled">(Select Ingredient)</option>
     <option value="Creme Fraiche">Creme Fraiche</option>
     <option value="Heavy Cream">Heavy Cream</option>
     <option value="Milk">Milk</option>
@@ -52,16 +53,22 @@
     <option value="Kosher Salt">Kosher Salt</option>
     <option value="Cocoa Powder">Cocoa Powder</option>
   </select>
-  <input class="col-md-2" id="quantity">Quantiy</input>
-  <input class="col-md-2" id="unit">Unit</input>
-  <button id="test" onclick="ingredient()">Give me mass!</button>
-
-  <div id="option-button-text">Would you like to have a new ingredient added or suggest a change?</div>
-  <div id="option-button-group">
-    <a href="mailto:djkawamoto@gmail.com?subject=New%20Ingredient%20Submission&body=Ingredient%20Name:%20%0D%0AIngredient%20Mass/gram:%20"><button class="email-button" id="new-ingredient">Submit new ingredient</button></a>
-    <a href="mailto:djkawamoto@gmail.com?subject=Suggest%20a%20Change"><button class="email-button" id="suggest-change">Suggest a change</button></a>
+  <label for="quantity" class="col-md-4">Quantity (in cups)</label>
+  <input class="col-md-1" id="quantity" onblur="quantityInput()"></input>
+  <!-- <label for="unit">Unit</label>
+  <input class="col-md-1" id="unit"></input> -->
+  <button id="test" onclick="calcGrams()">Give me mass!</button>
+  <div id="results" class="col-md-12">
+    <label for="result" class="col-md-2"><span id="quantity-label" class="result-label">#</span>cups <span id="ingredient-label" class="result-label">(of ingredient)</span> in grams</label>
+    <input id="result" class="col-md-1" disabled/>
   </div>
+
   <footer class="footer">
+    <div id="option-button-text">Would you like to have a new ingredient added or suggest a change?</div>
+    <div id="option-button-group">
+      <a href="mailto:djkawamoto@gmail.com?subject=New%20Ingredient%20Submission&body=Ingredient%20Name:%20%0D%0AIngredient%20Mass/gram:%20"><button class="email-button" id="new-ingredient">Submit new ingredient</button></a>
+      <a href="mailto:djkawamoto@gmail.com?subject=Suggest%20a%20Change"><button class="email-button" id="suggest-change">Suggest a change</button></a>
+    </div>
     <h4>Thanks for using GramCracker! To learn more about this and other exciting development projects go to <a href="http://www.danielkawamoto.com">danielkawamoto.com</a></h4>
     <p>Questions or comments? Send an email to <a href="mailto:djkawamoto@gmail.com?Subject=Hello%20from%20the%20GramCracker%20app%20contact%20form" target="_top">djkawamoto@gmail.com</a>.</p>
 
