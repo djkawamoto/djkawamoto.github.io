@@ -1,23 +1,21 @@
 .header {
   color: black;
 }
+.page-title {
+  padding: 20px;
+}
 body {
   background: lightblue;
 }
 h1 {
-  /*background: #000;
-  color: #ffffff;*/
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
-#test {
+#get-mass {
   margin-top: 10px;
   margin-left: 20px;
   float: left;
   clear: both;
-}
-.page-title {
-  padding: 20px;
 }
 #ingredient {
   margin: 5px 20px 20px 20px;
@@ -45,16 +43,11 @@ h1 {
 #results label {
   padding-left: 0px;
 }
-
 button {
   border-radius: 15px;
   padding: 10px;
   background-color: tomato;
   color: white;
-}
-footer {
-  margin: 40% 20px 20px 20px;
-  clear: both;
 }
 a {
   color: tomato;
@@ -68,7 +61,7 @@ label {
   clear: both;
   float:left;
 }
-
-/*.email-button {
-  color: black;
-}*/
+footer {
+  margin: 400px 20px 20px 20px;
+  clear: both;
+}
