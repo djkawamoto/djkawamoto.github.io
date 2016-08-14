@@ -22,7 +22,3 @@ function calcGrams() {
     };
     document.getElementById('result').value = grams;
 }
-
-function submitIngredient() {
-  window.open="mailto:djkawamoto@gmail.com?subject=New%20Ingredient%20Submission&body=Ingredient%20Name:%20%0D%0AIngredient%20Mass%20in%20Grams:%20";
-;}
