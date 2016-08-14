@@ -26,8 +26,8 @@
         <h1 class="page-title">GramCracker</h1>
     </div>
 
-    <label for="ingredient" class="col-xs-4">Ingredient</label>
-    <select value="Ingredient" class="col-xs-2" id="ingredient" onchange="selectIngredient()">
+    <label for="ingredient" class="col-xs-6 col-md-2">Ingredient</label>
+    <select value="Ingredient" class="col-xs-6 col-md-2" id="ingredient" onchange="selectIngredient()">
         <option value="(Select Ingredient)" selected="selected" disabled="disabled">(Select Ingredient)</option>
         <option value="Creme Fraiche">Creme Fraiche</option>
         <option value="Heavy Cream">Heavy Cream</option>
@@ -41,12 +41,12 @@
         <option value="Cocoa Powder">Cocoa Powder</option>
     </select>
 
-    <label for="quantity" class="col-xs-4">Quantity (in cups)</label>
-    <input class="col-xs-2" id="quantity" onblur="quantityInput()"></input>
+    <label for="quantity" class="col-xs-6 col-md-2">Quantity (in cups)</label>
+    <input class="col-xs-6 col-md-2" id="quantity" onblur="quantityInput()"></input>
 
     <!-- <div id="results" class="col-md-12"> -->
-        <label for="result" class="col-xs-4"><span id="quantity-label" class="result-label">#</span>cups <span id="ingredient-label" class="result-label">(of ingredient)</span> in grams:</label>
-        <input id="result" class="col-xs-2" disabled/>
+        <label for="result" class="col-xs-6 col-md-2"><span id="quantity-label" class="result-label">#</span>cups <span id="ingredient-label" class="result-label">(of ingredient)</span> in grams:</label>
+        <input id="result" class="col-xs-6 col-md-2" disabled/>
     <!-- </div> -->
     <button id="get-mass" onclick="calcGrams()">Give me mass!</button>
 
