@@ -27,7 +27,7 @@
     </div>
 
     <label for="ingredient" class="col-xs-6 col-md-2">Ingredient</label>
-    <select value="Ingredient" class="col-xs-6 col-md-2" id="ingredient" onchange="selectIngredient()">
+    <!-- <select value="Ingredient" class="col-xs-6 col-md-2" id="ingredient" onchange="selectIngredient()">
         <option value="(Select Ingredient)" selected="selected" disabled="disabled">(Select Ingredient)</option>
         <option value="Creme Fraiche">Creme Fraiche</option>
         <option value="Heavy Cream">Heavy Cream</option>
@@ -39,10 +39,12 @@
         <option value="Molasses">Molasses</option>
         <option value="Kosher Salt">Kosher Salt</option>
         <option value="Cocoa Powder">Cocoa Powder</option>
-    </select>
-
+    </select> -->
+	
+	<select id="items"></select>
+	
     <label for="quantity" class="col-xs-6 col-md-2">Quantity (in cups)</label>
-    <input class="col-xs-6 col-md-2" id="quantity" onblur="quantityInput()"></input>
+    <input class="col-xs-6 col-md-2" id="quantity" type="number"></input>
 
     <!-- <div id="results" class="col-md-12"> -->
         <label for="result" class="col-xs-6 col-md-2"><span id="quantity-label" class="result-label">#</span>cups <span id="ingredient-label" class="result-label">(of ingredient)</span> in grams:</label>
@@ -56,6 +58,8 @@
         <p>You can also <a href="mailto:djkawamoto@gmail.com?subject=New%20Ingredient%20Submission&body=Ingredient%20Name:%20%0D%0AIngredient%20Mass%20in%20Grams:%20">submit a new ingredient</a> or <a href="mailto:djkawamoto@gmail.com?subject=Suggest%20a%20Change">suggest a change</a>.</p>
     </footer>
 
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/toGrams.js"></script>
 </body>
 
 </html>

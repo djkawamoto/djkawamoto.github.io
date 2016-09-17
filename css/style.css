@@ -16,6 +16,10 @@ h1 {
   margin-left: 20px;
   float: left;
   clear: both;
+  outline: none;
+}
+#get-mass:active {
+	outline:none;
 }
 #ingredient {
   margin: 5px 20px 20px 20px;
